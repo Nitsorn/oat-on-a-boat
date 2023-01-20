@@ -37,10 +37,7 @@ function App() {
           🚀
           <span>Career</span>
         </button>
-        <button className={`Tab ${tab === 'about' && 'Tab--active'}`} onClick={() => setTab('about')}>
-          💁🏻
-          <span>More about me</span>
-        </button>
+
         <button className={`Tab ${tab === 'projects' && 'Tab--active'}`} onClick={() => setTab('projects')}>
           🖌️
           <span>Side projects & hobbies</span>
@@ -53,13 +50,17 @@ function App() {
           📝
           <span>(Really old) Blogs</span>
         </button>
+        <button className={`Tab ${tab === 'about' && 'Tab--active'}`} onClick={() => setTab('about')}>
+          💁🏻
+          <span>More about me</span>
+        </button>
       </div>
 
       <div className='Tab-Content'>
         {
           tab === 'career' && (
             <div>
-              <h2>🌱 My Career</h2>
+              <h2>🚀 Career</h2>
               <p>
                 I am a self-taught front-end engineer with eight years of experience. I graduated with a Chemical Engineering degree (from McGill University in Montreal, Canada), immediately realizing it was not for me, and took a year to learn how to code on my own (while moving to Vancouver, crashing at a friend's place and working part-time as a server).
               </p>
@@ -76,7 +77,7 @@ function App() {
                 While my self-taught technical skills were below others, I demonstrated my hunger quickly and gained the respect of my teammates and the CTO (who eventually became the engineer I work closely with the most). The work ethic and soft skills gained through self-learning and working as the only engineer made me highly impactful and reliable. In my four years at Streamlabs, I grew from a junior front-end engineer to become the Head of front-end Engineering for their web platform, overseeing many of our products and directly up to seven engineers across the organization.
               </p>
               <p>
-                In 2022, after giving four years to Streamlabs, I wanted to switch companies to challenge myself further technically. I willingly decided to step down from my managerial role and go back to a full individual contributor role, and search for a late-stage startup with top-tier ex-FAANG engineers in a technically challenging industry. After months of interviews, I decided to join <a target='_blank' href='https://bolt.com'>Bolt Financials</a> (e-commerce/checkout) as a senior front-end engineer, owning the front-end of one of the company's biggest bets for 2023.
+                In 2022, after giving four years to Streamlabs, I wanted to switch companies to challenge myself further technically. I willingly decided to step down from my managerial role and go back to a full individual contributor role, and search for a late-stage startup with top-tier ex-FAANG engineers in a technically challenging industry. After months of interviews, I decided to join <a target='_blank' href='https://bolt.com'>Bolt Financials</a> (e-commerce/checkout) as a senior front-end engineer, owning the front-end of one of the company's biggest bets for 2023. I am currently at Bolt.
               </p>
             </div>
           )
@@ -84,7 +85,7 @@ function App() {
         {
           tab === 'about' && (
             <div>
-              <p>Curious? Email me :)</p>
+              <p>Curious? <a className='Header-Link' target='_blank' href="mailto:nitsorn.oat@gmail.com">📧 Email me </a> :)</p>
             </div>
           )
         }
