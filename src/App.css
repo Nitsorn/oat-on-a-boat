@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap');
 
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #1D2228;
-  color: white;
+  background: linear-gradient(90deg, #1D2228, #1d2628);
+  color: #c4c4c4;
   padding: 5%;
   font-weight: 400;
   letter-spacing: 1px;
@@ -20,19 +20,28 @@ p {
   margin-top: 0;
 }
 
+p {
+  line-height: 25px;
+}
+
 h4 {
   font-style: italic;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2 {
+  color: white;
+  font-family: 'Shrikhand', cursive;
+}
+
+button, a {
   font-family: 'Roboto', sans-serif;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 900;
   }
 
@@ -55,35 +64,33 @@ h4 {
 .App-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 16px 0;
 }
 
 .App-body {
-  gap: 50px;
+  gap: 30px;
   align-items: center;
   display: grid;
   text-align: left;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
 }
 
-.App-Content {
+.App-Hero {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-@media screen and (max-width: 1000px) {
 
 
-}
-
-@media screen and (max-width: 800px) {
-  .App-body {
-    grid-template-columns: 1fr;
-  }
-
+.Tab-Content {
+  text-align: left;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: start;
 }
 
 
@@ -101,10 +108,123 @@ h4 {
 
 .profile-pic {
   width: 100%;
-  box-shadow: 20px 20px 0 0 rgba(0, 0, 0, 0.5);
-  border-radius: 30px;
+}
+
+.Oat-underline {
+  border-bottom: 6px solid white;
+  color: #ffa500;
+}
+
+.Header-Links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+a {
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 30px;
+  border-bottom: 4px solid transparent;
+  }
+
+.Header-Link:hover {
+  color: #ffa500;
+  border-bottom: 4px solid white;  
+}
+
+.NameExplain {
+  background-color: #4e3c1b;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 15px;
+  transition: 0.2s ease;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.NameExplain:hover {
+  transform: scale(1.05);
+  background-color: #b67b0f;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+.Tab {
+  background-color: #1d1d1d;
+  color: white;
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: 500 !important;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+
+.Tab:not(.Tab--active):hover {
+  background-color: #333333;
+}
+
+.Tab--active {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.Tab:active,
+.Tab:focus {
+  animation: CLICK 0.25s;
+}
+
+footer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes CLICK {
+  from {
+    transform: translate3d(5px, 5px, 0);
+    box-shadow: 0 0 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 800px) {
+  .App-body {
+    grid-template-columns: 1fr;
+  }
+
+  .Tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
