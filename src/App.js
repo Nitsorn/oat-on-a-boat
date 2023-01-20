@@ -95,10 +95,10 @@ function App() {
               <h2>🖌️ Side projects</h2>
               <ul>
                 <li>
-                  🔗 <a href='https://oatonaboat' target={'_blank'}>Oat on a boat | Personal website (2023)</a>
+                  🔗 <a href='https://oatonaboat' target={'_blank'}>Oat on a boat | Personal website (2023)</a> [<a href="https://github.com/Nitsorn/oat-on-a-boat" target={'_blank'}>Github</a>]
                 </li>
                 <li>
-                  🔗 <a href='https://friendlyinvite.me' target={'_blank'}>Friendly | Plan & collaborate on your social events (2022)</a>
+                  🔗 <a href='https://friendlyinvite.me' target={'_blank'}>Friendly | Plan & collaborate on your social events (2022)</a> [<a href="https://github.com/friendlyinvite-me/fe-friendly" target={'_blank'}>Github [frontend]</a>]
                 </li>
                 <li>
                   🔗 <a href='https://www.instagram.com/stylish.devs/' target={'_blank'}>Stylish.dev | Stylish & altruistic programmer fashion (2020-2021)</a>
