@@ -129,7 +129,7 @@ a {
   border-bottom: 4px solid transparent;
   }
 
-.Header-Link:hover {
+a:hover {
   color: #ffa500;
   border-bottom: 4px solid white;  
 }

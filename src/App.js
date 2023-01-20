@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 
@@ -23,7 +22,7 @@ function App() {
             </h1>
 
             <p>
-              Thanks for visiting my website! I am a frontend engineer from Thailand 🇹🇭 living in Toronto, Canada 🇨🇦
+              Thanks for visiting my website! I am a front-end engineer from Thailand 🇹🇭 living in Toronto, Canada 🇨🇦
             </p>
             <p>I enjoy dancing, drawing and finding good deals on Facebook marketplace 🕵️</p>
             <p>I'm also interested in self-development, Buddhism and staying active 💪</p>
@@ -35,7 +34,7 @@ function App() {
 
       <div className='Tabs'>
         <button className={`Tab ${tab === 'career' && 'Tab--active'}`} onClick={() => setTab('career')}>
-          🌱
+          🚀
           <span>Career</span>
         </button>
         <button className={`Tab ${tab === 'about' && 'Tab--active'}`} onClick={() => setTab('about')}>
@@ -44,7 +43,11 @@ function App() {
         </button>
         <button className={`Tab ${tab === 'projects' && 'Tab--active'}`} onClick={() => setTab('projects')}>
           🖌️
-          <span>Side projects</span>
+          <span>Side projects & hobbies</span>
+        </button>
+        <button className={`Tab ${tab === 'evolution' && 'Tab--active'}`} onClick={() => setTab('evolution')}>
+          🌱
+          <span>Evolution</span>
         </button>
         <button className={`Tab ${tab === 'blogs' && 'Tab--active'}`} onClick={() => setTab('blogs')}>
           📝
@@ -58,23 +61,107 @@ function App() {
             <div>
               <h2>🌱 My Career</h2>
               <p>
-                I am a self-taught frontend engineer with eight years of experience. I graduated with a Chemical Engineering degree (from McGill University in Montreal, Canada), immediately realizing it was not for me, and took a year to learn how to code on my own (while moving to a Vancouver, crashing at a friend's place and working part-time as a sever).
+                I am a self-taught front-end engineer with eight years of experience. I graduated with a Chemical Engineering degree (from McGill University in Montreal, Canada), immediately realizing it was not for me, and took a year to learn how to code on my own (while moving to Vancouver, crashing at a friend's place and working part-time as a server).
               </p>
               <p>
-                My first job was at a seven-people tech agency, where I was hired as an office manager/social media manager/graphic designer. I slowly proved my worth and showed interest in frontend development, and within 2 months I officially became a software engineer.
+                My first job was at a seven-people tech agency, where I was hired as an office manager/social media manager/graphic designer. I slowly proved my worth and showed interest in front-end development, and within 2 months I officially became a software engineer.
               </p>
               <p>
-                For the next two years, I worked as the only engineer at a couple 2-5 people pre-seed startups. These years showed me the challenges in building a company, but also gave me an opportunity to gain high-level businss knowledge and ability to build fast, be versatile and adaptable to changing product requirements. Unfortunately, all the companies eventually failed to raise funds and had to shut down.
+                For the next two years, I worked as the only engineer at a couple of 2-5 people pre-seed startups. These years showed me the challenges of building a company but also allowed me to gain high-level business knowledge and the ability to build fast, be versatile, and be adaptable to changing product requirements. Unfortunately, all the companies eventually failed to raise funds and had to shut down.
               </p>
               <p>
-                I then decided to find a more stable job where I can learn from others. I applied to Streamlabs through Angelist, and got offered a position (by mistake, but thats another story...) of a junior frontend engineer.
+                I then decided to find a more stable job where I can learn from others. I applied to <a target='_blank' href='https://streamlabs.com'>Streamlabs</a> (livestreaming) through Angelist and got offered a position (by mistake, but that's another story...) as a junior front-end engineer.
               </p>
               <p>
-                While my self-taught technical skills were below others, I demonstrated my hunger quickly and gained the respect of my teammates and the CTO (who eventually became engineer I work closey with the most). The work ethics and soft-skills gained through teaching myself and working by myself made me highly impactful and reliable. In my four years at Streamlabs, I grew from a junior frontend engineer to become the Head of Frontend Engineering for their web platform, overseeing many of our products and directly up to seven engineers across the organization.
+                While my self-taught technical skills were below others, I demonstrated my hunger quickly and gained the respect of my teammates and the CTO (who eventually became the engineer I work closely with the most). The work ethic and soft skills gained through self-learning and working as the only engineer made me highly impactful and reliable. In my four years at Streamlabs, I grew from a junior front-end engineer to become the Head of front-end Engineering for their web platform, overseeing many of our products and directly up to seven engineers across the organization.
               </p>
               <p>
-                After giving four years to Streamlabs, I wanted to switch company to challenge myself further technically. I decided to willingly step down from my managerial role and go back to full individual contributor role, and search for a late-stage startup with top-tier ex-FAANG engineers in a complex industry. After months of interview, I decided to join Bolt Financials in the e-commerce space as a senior frontend engineer.
+                In 2022, after giving four years to Streamlabs, I wanted to switch companies to challenge myself further technically. I willingly decided to step down from my managerial role and go back to a full individual contributor role, and search for a late-stage startup with top-tier ex-FAANG engineers in a technically challenging industry. After months of interviews, I decided to join <a target='_blank' href='https://bolt.com'>Bolt Financials</a> (e-commerce/checkout) as a senior front-end engineer, owning the front-end of one of the company's biggest bets for 2023.
               </p>
+            </div>
+          )
+        }
+        {
+          tab === 'about' && (
+            <div>
+              <p>Curious? Email me :)</p>
+            </div>
+          )
+        }
+        {
+          tab === 'projects' && (
+            <div>
+              <h2>🖌️ Side projects</h2>
+              <ul>
+                <li>
+                  🔗 <a href='https://oatonaboat' target={'_blank'}>Oat on a boat | Personal website (2023)</a>
+                </li>
+                <li>
+                  🔗 <a href='https://friendlyinvite.me' target={'_blank'}>Friendly | Plan & collaborate on your social events (2022)</a>
+                </li>
+                <li>
+                  🔗 <a href='https://www.instagram.com/stylish.devs/' target={'_blank'}>Stylish.dev | Stylish & altruistic programmer fashion (2020-2021)</a>
+                </li>
+              </ul>
+              <h2>🏌️‍♂️ Hobbies</h2>
+              <ul>
+                <li>
+                  🔗 <a href='https://www.instagram.com/oat_draws/?hl=en' target={'_blank'}>Oat draws</a>
+                </li>
+                <li>
+                  Hip-hop Dance
+                </li>
+                <li>
+                  Golf
+                </li>
+              </ul>
+              <h2>🤔 Things I'm learning </h2>
+              <ul>
+                <li>🎸 Guitar</li>
+                <li>🕺 Salsa & Bachata Dance</li>
+              </ul>
+
+            </div>
+          )
+        }
+        {
+          tab === 'evolution' && (
+            <div>
+              <h2>🌱 Evolution</h2>
+              <h4>Resumes in chronological order</h4>
+              <div>
+                <ul>
+                  <li>
+                    <a className='Header-Link' target='_blank' href="https://firebasestorage.googleapis.com/v0/b/website-1057b.appspot.com/o/resume-2023.pdf?alt=media&token=6f7d574c-e235-464f-98fa-87c46b009da9">📝 2023 (Current)</a>
+                  </li>
+                  <li>
+                    <a className='Header-Link' target='_blank' href="https://firebasestorage.googleapis.com/v0/b/website-1057b.appspot.com/o/2022.pdf?alt=media&token=a63277c1-2857-4d86-9555-298184194f0e">📝 2022</a>
+                  </li>
+                  <li>
+                    <a className='Header-Link' target='_blank' href="https://firebasestorage.googleapis.com/v0/b/website-1057b.appspot.com/o/2021.pdf?alt=media&token=6f9acbde-4624-431b-8cc2-b8eabae1ffa2">📝 2021</a>
+                  </li>
+                  <li>
+                    <a className='Header-Link' target='_blank' href="https://firebasestorage.googleapis.com/v0/b/website-1057b.appspot.com/o/2019.pdf?alt=media&token=e10d6a5c-aa4e-4538-bffb-dc7b2fd066c6">📝 2019</a>
+                  </li>
+                  <li>
+                    <a className='Header-Link' target='_blank' href="https://firebasestorage.googleapis.com/v0/b/website-1057b.appspot.com/o/2018.pdf?alt=media&token=83075b57-3e5c-4f80-9c94-20b319b4afb9">📝 2018</a>
+                  </li>
+                  <li>
+                    <a className='Header-Link' target='_blank' href="https://firebasestorage.googleapis.com/v0/b/website-1057b.appspot.com/o/2017.pdf?alt=media&token=e55c0f32-c113-4d23-ac26-67970837caa9">📝 2017</a>
+                  </li>
+                  <li>
+                    <a className='Header-Link' target='_blank' href="https://firebasestorage.googleapis.com/v0/b/website-1057b.appspot.com/o/2015.pdf?alt=media&token=204af636-dbde-4a44-94aa-8997e0a80a5c">📝 2015</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          )
+        }
+        {
+          tab === 'blogs' && (
+            <div>
+              <h2>📝 (Really old) Blogs</h2>
+              <a href='https://medium.com/@oat-on-a-boat/' target={'_blank'}>https://medium.com/@oat-on-a-boat/</a>
             </div>
           )
         }
