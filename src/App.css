@@ -227,4 +227,8 @@ footer {
     flex-direction: column;
     align-items: stretch;
   }
+
+  h1 {
+    font-size: 36px;
+  }
 }
