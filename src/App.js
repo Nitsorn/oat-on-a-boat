@@ -120,6 +120,7 @@ function App() {
               <ul>
                 <li>🎸 Guitar</li>
                 <li>🕺 Salsa & Bachata Dance</li>
+                <li>🤿 Scuba diving</li>
               </ul>
 
             </div>
@@ -155,6 +156,9 @@ function App() {
                   </li>
                 </ul>
               </div>
+              <p>
+                Like my resumes and want me to help design yours? <a href="mailto:nitsorn.oat@gmail.com">Email me :)</a>
+              </p>
             </div>
           )
         }
