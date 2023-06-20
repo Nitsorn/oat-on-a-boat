@@ -94,6 +94,9 @@ function App() {
             <div>
               <h2>🖌️ Side projects</h2>
               <ul>
+                 <li>
+                  🔗 <a href='https://hirable.fyi' target={'_blank'}>Hirable | All-in-one career platform (2023)</a>
+                </li>
                 <li>
                   🔗 <a href='https://oatonaboat' target={'_blank'}>Oat on a boat | Personal website (2023)</a> [<a href="https://github.com/Nitsorn/oat-on-a-boat" target={'_blank'}>Github</a>]
                 </li>
